@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Créer un mot de passe</title>
+    </head>
+    <body>
+        <fieldset>
+            <legend>Demander un mot de passe avec : </legend>
+            <form method="post" action="">
+                <select name="nbr_de_caracteres"> 
+                    <option value="huit" selected="selected">8 caractères</option> 
+                    <option value="dix">10 caractères</option> 
+                    <option value="douze">12 caractères</option> 
+                </select> 
+                <input type="submit" value="Soumettre">
+            </form>
+        </fieldset>
+        <h1><?php if(isset($new_password)) : print $new_password; else: echo "Demander un mot de passe"; endif;?></h1>
+    </body>
+</html>
